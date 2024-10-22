@@ -61,3 +61,13 @@ html{
   border: 0;
   outline: 0;
 }
+
+.inputBox2 textarea{
+  flex: 1;
+  padding: 10px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  min-height: 100px;
+  resize: vertical;
+}

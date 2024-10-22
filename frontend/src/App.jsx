@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import NoPage from './pages/NoPage';
 import SinglePost from './pages/SinglePost';
 import SignUp from './pages/SignUp';
+import Login from './pages/Login';
+import CreatePost from './pages/CreatePost';
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
             <Route path='/' element={<Home/>}/>
             <Route path='/signlePost/:id' element={<SinglePost/>}/>
             <Route path="/signUp" element={<SignUp/>}/>
+            <Route path="/login" element={<Login/>}/>
+            <Route path="/create" element={<CreatePost/>}/>
             <Route path="*" element={<NoPage/>}/>
         </Routes>
       </BrowserRouter>

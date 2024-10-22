@@ -3,8 +3,14 @@ import Navbar from '../components/Navbar'
 import { HiDotsHorizontal } from "react-icons/hi";
 import { LuUpload } from "react-icons/lu";
 import Avatar from 'react-avatar';
+import { FaRegHeart } from "react-icons/fa6";
 
 const SinglePost = () => {
+
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+    // localStorage.setItem("isLoggedIn", "true");
+
+
   return (
     <>
        <Navbar/>
@@ -15,8 +21,12 @@ const SinglePost = () => {
          <div className='right w-[50%] p-[12px] min-h-full ml-5 rounded-[20px]'>
             <div className='flex justify-between items-center gap-5'>
                 <div className='flex items-center gap-4'>
-                    <i className='font-[500] text-[30px] cursor-pointer'><HiDotsHorizontal/></i>
-                    <i className='font-[500] text-[28px] cursor-pointer'><LuUpload/></i>
+                    {
+                        isLoggedIn ?
+                        <i className='text-[20px] cursor-pointer'><FaRegHeart/></i> : ""
+                    }
+                    <i className='text-[20px] cursor-pointer'><HiDotsHorizontal/></i>
+                    <i className='text-[20px] cursor-pointer'><LuUpload/></i>
                 </div>
                 <button className='btnNormal !bg-[#E60023] text-white'>Save</button>
             </div>
@@ -26,12 +36,18 @@ const SinglePost = () => {
             <p className='mt-4 text-[16px] text-[gray]'>
                 Get the Valentine gift for your special one.
             </p>
-            <div className='flex items-start gap-3 mt-4'>
-                <img className='w-[50px] h-[50px] rounded-[50%] object-cover cursor-pointer' src="https://i.pinimg.com/280x280_RS/1f/f0/79/1ff0796aed7fe27aa9d40d6d35c36bae.jpg" alt="" />
-                <div>
-                    <p className='font-[500]'>Tommy Santiago</p>
-                    <p className='text-[14px] text-[gray]'>807 followers</p>
+            <div className='flex items-start justify-between gap-3 mt-4'>
+                <div className='flex items-start gap-2'>
+                    <img className='w-[50px] h-[50px] rounded-[50%] object-cover cursor-pointer' src="https://i.pinimg.com/280x280_RS/1f/f0/79/1ff0796aed7fe27aa9d40d6d35c36bae.jpg" alt="" />
+                    <div>
+                        <p className='font-[500]'>Tommy Santiago</p>
+                        <p className='text-[14px] text-[gray]'>807 followers</p>
+                    </div>
                 </div>
+                {
+                    isLoggedIn ?
+                    <button className='btnNormal'>Follow</button> : ""
+                }
             </div>
             <h3 className='text-xl font-[500] mt-4'>7 Comments</h3>
             <div className='comments pt-4'>
