@@ -6,7 +6,7 @@ import NoPage from './pages/NoPage';
 import SinglePost from './pages/SinglePost';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
-import CreatePost from './pages/CreatePost';
+import CreatePost from './pages/CreatePost'; 
 
 const App = () => {
   return (
