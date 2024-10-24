@@ -6,7 +6,7 @@ const CreatePost = () => {
   return (
    <>
       <Navbar/>
-      <div className='px-[100px] min-h-[80vh]'>
+      <div className='px-[100px] min-h-[80vh]'> 
         
         <h3 className='text-xl font-[500] my-4'>Create Pin</h3> 
 
