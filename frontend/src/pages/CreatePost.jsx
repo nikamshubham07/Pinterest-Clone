@@ -8,7 +8,7 @@ const CreatePost = () => {
       <Navbar/>
       <div className='px-[100px] min-h-[80vh]'>
         
-        <h3 className='text-xl font-[500] my-4'>Create Pin</h3>
+        <h3 className='text-xl font-[500] my-4'>Create Pin</h3> 
 
         <div className='px-[50px] h-full w-full flex'>
             <div className='imgCon min-h-[70vh] flex items-center flex-col justify-center bg-[#E9E9E9] rounded-[20px] cursor-pointer w-[30%]'>
