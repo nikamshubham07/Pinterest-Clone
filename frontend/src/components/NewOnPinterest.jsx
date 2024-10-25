@@ -4,7 +4,7 @@ import Card from './Card'
 const NewOnPinterest = () => {
   return (
     <div className='px-[100px] mt-5 font-[500]'>
-      <h3 className='text-2xl'>What's new on Pinterest</h3>
+      <h3 className='text-2xl pb-5'>What's new on Pinterest</h3>
       <div className='cards'>
         <Card item={{img: "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg"}}/> 
         <Card item={{img: "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}}/> 
