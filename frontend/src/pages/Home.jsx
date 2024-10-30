@@ -8,7 +8,7 @@ const Home = () => {
        <Navbar/>
        <NewOnPinterest/>
     </>
-  )
+  ) 
 }
 
 export default Home
