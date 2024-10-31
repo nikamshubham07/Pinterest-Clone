@@ -5,7 +5,7 @@ const Card = ({ item }) => {
   return (
     <div className='card'>
       <img className='mainImg' src={img} alt="Pinterest"/>
-      <p className='font-[500] line-clamp-2 w-[90%]'>
+      <p className='font-[500] line-clamp-2 w-[90%]'> 
         Title Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique quae atque possimus?
       </p>
       <p className='text-[gray] text-[14px] line-clamp-2 w-[90%]'>
